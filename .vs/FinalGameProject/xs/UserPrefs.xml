@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{03F15F8A-0DEC-5EA5-B093-460C0F776607}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Puzzle.cs">
+    <Files>
+      <File FileName="Assets/Script/Puzzle.cs" Line="11" Column="1" IsPinned="True" />
+      <File FileName="Assets/Script/PuzzleGeneration.cs" Line="59" Column="1" />
+      <File FileName="Assets/Menu.cs" Line="27" Column="37" />
+      <File FileName="Assets/Script/Test/Game.cs" Line="7" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FinalGameProject" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="Puzzle.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26b065cb-79e2-4e40-86ba-9624b8d62c8a" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
