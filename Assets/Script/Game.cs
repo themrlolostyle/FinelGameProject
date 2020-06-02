@@ -26,7 +26,7 @@ public class Game : MonoBehaviour, IPointerClickHandler
 
     private void ChangeElementState(Puzzle puzzle)
     {
-        if (puzzle.NotClickable == true)
+        if (puzzle.Interacteble == true)
         {
             return;
         }
@@ -45,12 +45,12 @@ public class Game : MonoBehaviour, IPointerClickHandler
         if (_firstElement == null)
         {
             _firstElement = puzzle;
-            _firstElement.Click();
+            _firstElement.ChangeState();
             return false;
         }
         else if (_firstElement == puzzle && _secondElement == null)
         {
-            _firstElement.Click();
+            _firstElement.ChangeState();
             _firstElement = null;
             return false;
         }
@@ -62,7 +62,7 @@ public class Game : MonoBehaviour, IPointerClickHandler
         if (_secondElement == null)
         {
             _secondElement = puzzle;
-            _secondElement.Click();
+            _secondElement.ChangeState();
             _clickOnSecondPuzzleCount++;
             return false;
         }
@@ -71,8 +71,8 @@ public class Game : MonoBehaviour, IPointerClickHandler
 
     private void Reset()
     {
-        _firstElement.Click();
-        _secondElement.Click();
+        _firstElement.ChangeState();
+        _secondElement.ChangeState();
         _firstElement = null;
         _secondElement = null;
     }

@@ -13,7 +13,7 @@ public class Puzzle : MonoBehaviour
     private Image _image;
     private Sprite _visibleSprite;
 
-    public bool NotClickable { get; private set; }
+    public bool Interacteble { get; private set; }
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Puzzle : MonoBehaviour
         _visibleSprite = _image.sprite;
     }
 
-    public void Click()
+    public void ChangeState()
     {
         switch (_state)
         {
@@ -49,6 +49,6 @@ public class Puzzle : MonoBehaviour
     public void Found()
     {
         _state = State.Found;
-        NotClickable = true;
+        Interacteble = true;
     }
 }

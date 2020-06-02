@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{03F15F8A-0DEC-5EA5-B093-460C0F776607}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Puzzle.cs">
     <Files>
-      <File FileName="Assets/Script/Puzzle.cs" Line="11" Column="1" IsPinned="True" />
+      <File FileName="Assets/Script/Puzzle.cs" Line="16" Column="23" IsPinned="True" />
       <File FileName="Assets/Script/PuzzleGeneration.cs" Line="59" Column="1" />
-      <File FileName="Assets/Menu.cs" Line="27" Column="37" />
-      <File FileName="Assets/Script/Test/Game.cs" Line="7" Column="19" />
+      <File FileName="Assets/Script/Game.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26b065cb-79e2-4e40-86ba-9624b8d62c8a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bce4bbda-21b7-4d4c-af06-2a8fc7ae1bb8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
