@@ -10,21 +10,24 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject _winPanel;
     [SerializeField] private GameObject _losePanel;
 
+    private Game _game;
+
     private void OnEnable()
     {
-        _gamePanel.GetComponent<Game>().WinGame += Win;
-        _gamePanel.GetComponent<Game>().LoseGame += Lose;
+        _game = _gamePanel.GetComponent<Game>();
+        _game.WinGame += OnWin;
+        _game.LoseGame += OnLose;
     }
     private void OnDisable()
     {
-        _gamePanel.GetComponent<Game>().WinGame -= Win;
-        _gamePanel.GetComponent<Game>().LoseGame -= Lose;
+        _game.WinGame -= OnWin;
+        _game.LoseGame -= OnLose;
     }
 
     public void StartGame(int maxStep)
     {
-        _gamePanel.GetComponent<PuzzleGeneration>().Generate();
-        _gamePanel.GetComponent<Game>().MaxStep = maxStep;
+        _gamePanel.GetComponent<PuzzleGenerator>().Generate();
+        _game.MaxStep = maxStep;
         _gamePanel.SetActive(true);
         _startMenuPanel.SetActive(false);
     }
@@ -34,13 +37,13 @@ public class Menu : MonoBehaviour
         Application.LoadLevel("SampleScene");
     }
 
-    public void Win()
+    public void OnWin()
     {
         _gamePanel.SetActive(false);
         _winPanel.SetActive(true);
     }
 
-    public void Lose()
+    public void OnLose()
     {
         _gamePanel.SetActive(false);
         _losePanel.SetActive(true);
